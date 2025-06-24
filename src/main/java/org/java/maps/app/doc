@@ -1,0 +1,40 @@
+/**
+ * application Logic ->
+ 1. Store books by ID (for quick lookup)
+ 2. Track borrow history in order
+ 3. Count popularity (sorted by book ID)
+ 4. Browse books sorted by title
+
+ 📘 Books Sorted by Title:
+ 1: Algorithms by Knuth
+ 3: Java in Depth by Ravi
+ 2: Zebra Tales by Smith
+
+ 🕓 Borrowing Order:
+ Book ID 1 at Mon Jun 24 15:02:44 IST 2025
+ Book ID 2 at Mon Jun 24 15:03:01 IST 2025
+ ...
+ 🔥 Popular Books by ID (ascending):
+ Book ID 1 borrowed 2 times
+ Book ID 2 borrowed 1 times
+ Book ID 3 borrowed 1 times
+
+ 🚀 Functions to Implement:
+ ✅ addBook(Book book)
+ Add book to:
+ bookCatalog
+ sortedByTitle
+
+ ✅ borrowBook(int bookId)
+ Validate if book exists
+ Log timestamp into borrowHistory
+ Increment borrow count in bookPopularity
+
+ ✅ main(String[] args)
+ Add some dummy books
+ Borrow some books
+ Print:
+ All books sorted by title
+ Borrow history in order
+ Popular books sorted by ID
+ **/

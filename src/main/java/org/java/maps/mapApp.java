@@ -1,8 +1,9 @@
 package org.java.maps;
+
 import java.util.*;
 
 
-public class Pmap {
+public class mapApp {
 
     public static void main(String[] args){
 
@@ -33,9 +34,17 @@ public class Pmap {
 
         }
 
-
-
+        // -- treeMap and sortedmap
+        System.out.println("---treeMap and sortedMap");
+        Map<String, Integer> treeMap = new TreeMap<>(); // maintaining the order of in
+        treeMap.put("Shivani", 10);
+        treeMap.put("Amit", 30);
+        treeMap.put("Guddu", 20);
+        treeMap.put("Bro",50);
+        // traversing through map using for looping
+        for(Map.Entry<String ,Integer> mp: treeMap.entrySet()) {
+            System.out.print(mp.getKey() + ":");
+            System.out.println(mp.getValue());
+        }
     }
-
-
 }
