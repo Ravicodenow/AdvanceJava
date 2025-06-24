@@ -3,6 +3,9 @@ package org.java.maps.app;
 
 import java.util.*;
 
+/**
+ * This class use for run the application.
+ */
 public class LibraryManager {
     Map<Integer, Book> bookCatalog = new TreeMap<>();
     SortedMap<String, Book> allBooks = new TreeMap<>();
